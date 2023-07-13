@@ -1,0 +1,103 @@
+<!doctype html>
+<html> 
+ <head>
+   <link rel="stylesheet" href="drum.css"><style type="text/css" id="dcoder_stylesheet">h1{
+  text-align : center;
+  color : white;
+}
+body{
+  background-color : blue;
+}
+.dc{
+  text-align: center;
+}
+img{
+  height: 75px;
+  width: 75px;
+  
+}
+footer{
+  color : white;
+  text-align :center;
+}
+.press{
+  opacity: 0.5;
+  box-shadow : 0 3px 4px 0 ;
+  color:blue;
+  background-color: black;
+  }</style></head> 
+ <body> 
+  <br> 
+  <br> 
+  <h1> Drum Noise </h1> 
+  <br> 
+  <br> 
+  <br> 
+  <div class="dc"> <button class="a drum"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQjD_Wim-8RtAv1DZunfqnObhzRMi2_weqAlaEleavSVNel7cj2MzX15Ofi&amp;s=10">a</button> <button class="b drum"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRqmRShAo5t9Z5G_mkMjPp5ns0akzR15AdF6w&amp;usqp=CAU">b</button> <button class="c drum"><img src="https://upload.wikimedia.org/wikipedia/commons/6/6c/Bass_drum.jpg">c</button> <button class="d drum"><img src="https://cdn.create.vista.com/api/media/small/38122179/stock-photo-snare-drum">d</button> <button class="e drum"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTNJ17LmLaqcs4UDHDkAyh9jRyIVf3uuQf4cA&amp;usqp=CAU">e</button> <button class="f drum"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSV9ws1H-MmarY6GU81mhbeUCDTjCMhenL9fA&amp;usqp=CAU">f</button> <button class="g drum"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT_WD7vI0L8VDjvJXjZP57plZIyzrVjr03SMA&amp;usqp=CAU">g</button> 
+  </div> 
+  <input type=""> 
+  <br> 
+  <br> 
+    <script src="drum.js" charset="utf-8"></script>
+  <footer>
+    Made With ❤️ in India 
+  </footer> 
+ 
+<script type="text/javascript" id="dcoder_script">var a = document.querySelectorAll(".drum").length;
+function abc(){
+  var tc = this.textContent;
+  ms(tc);
+  animation(tc);
+ }
+for(var i = 0; i< a; i++){
+  document.querySelectorAll(".drum")[i].addEventListener("click",abc);
+  
+  }
+document.addEventListener("keypress",function abcd(event){
+  ms(event.key);
+  animation(event.key);
+  });
+
+function ms(key){
+  
+  switch (key){
+    case "a":
+    var b = new Audio("content://media/external/downloads/4399");
+    b.play();
+    break;
+     case "b":
+    var c = new Audio("content://media/external/downloads/4400");
+    c.play();
+    break;
+     case "c":
+    var d = new Audio("content://media/external/downloads/4401");
+    d.play();
+    break;
+    
+     case "d":
+    var e = new Audio("content://media/external/downloads/4402");
+    e.play();
+    break;
+      case "e":
+    var f = new Audio("content://media/external/downloads/4403");
+    f.play();
+    break;
+     case "f":
+    var g = new Audio("content://media/external/downloads/4404");
+    g.play();
+    break;
+     case "g":
+    var h = new Audio("content://media/external/downloads/4405");
+    h.play();
+    break;
+    
+    default: 
+      console.log(hello);
+  }
+ }
+ function animation(ck){
+   var tc = this.textContent;
+  var ab =  document.querySelector(tc);
+  ab.classList.add(".press");
+   
+ }</script></body></html>
